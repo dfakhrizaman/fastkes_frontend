@@ -1,0 +1,404 @@
+define(['dart_sdk', 'packages/provider/src/provider.dart', 'packages/fastkes_app/viewmodels/order_vm.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/material/elevated_button.dart', 'packages/google_fonts/src/google_fonts_base.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/material/icon_button.dart'], (function load__packages__fastkes_app__widgets__confirm_bottom_sheet_dart(dart_sdk, packages__provider__src__provider$46dart, packages__fastkes_app__viewmodels__order_vm$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__material__elevated_button$46dart, packages__google_fonts__src__google_fonts_base$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__material__icon_button$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const provider = packages__provider__src__provider$46dart.src__provider;
+  const order_vm = packages__fastkes_app__viewmodels__order_vm$46dart.viewmodels__order_vm;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const elevated_button = packages__flutter__src__material__elevated_button$46dart.src__material__elevated_button;
+  const google_fonts = packages__google_fonts__src__google_fonts_base$46dart.google_fonts;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const theme = packages__flutter__src__material__icon_button$46dart.src__material__theme;
+  var confirm_bottom_sheet = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    ObjectN: () => (T.ObjectN = dart.constFn(dart.nullable(core.Object)))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 12,
+        [EdgeInsets_right]: 12,
+        [EdgeInsets_top]: 12,
+        [EdgeInsets_left]: 12
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 22,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C2() {
+      return C[2] = dart.constList([C[3] || CT.C3], widget_inspector._Location);
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[2] || CT.C2,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Users/ASUS/OneDrive/Documents/FlutterProjects/fastkes_app/frontend/lib/widgets/confirm_bottom_sheet.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "textAlign",
+        [_Location_column]: 15,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([C[6] || CT.C6, C[7] || CT.C7, C[8] || CT.C8], widget_inspector._Location);
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///C:/Users/ASUS/OneDrive/Documents/FlutterProjects/fastkes_app/frontend/lib/widgets/confirm_bottom_sheet.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 12,
+        [EdgeInsets_right]: 0,
+        [EdgeInsets_top]: 12,
+        [EdgeInsets_left]: 0
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 19,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 19,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12, C[13] || CT.C13], widget_inspector._Location);
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///C:/Users/ASUS/OneDrive/Documents/FlutterProjects/fastkes_app/frontend/lib/widgets/confirm_bottom_sheet.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 17,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16, C[17] || CT.C17], widget_inspector._Location);
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 45,
+        [_Location_file]: "file:///C:/Users/ASUS/OneDrive/Documents/FlutterProjects/fastkes_app/frontend/lib/widgets/confirm_bottom_sheet.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 15,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20, C[21] || CT.C21, C[22] || CT.C22], widget_inspector._Location);
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 36,
+        [_Location_file]: "file:///C:/Users/ASUS/OneDrive/Documents/FlutterProjects/fastkes_app/frontend/lib/widgets/confirm_bottom_sheet.dart"
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 11,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 11,
+        [_Location_line]: 28,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.constList([C[25] || CT.C25, C[26] || CT.C26, C[27] || CT.C27], widget_inspector._Location);
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[24] || CT.C24,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/ASUS/OneDrive/Documents/FlutterProjects/fastkes_app/frontend/lib/widgets/confirm_bottom_sheet.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30, C[31] || CT.C31], widget_inspector._Location);
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 24,
+        [_Location_file]: "file:///C:/Users/ASUS/OneDrive/Documents/FlutterProjects/fastkes_app/frontend/lib/widgets/confirm_bottom_sheet.dart"
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.constList([C[34] || CT.C34], widget_inspector._Location);
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[33] || CT.C33,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/ASUS/OneDrive/Documents/FlutterProjects/fastkes_app/frontend/lib/widgets/confirm_bottom_sheet.dart"
+      });
+    }
+  }, false);
+  var C = Array(35).fill(void 0);
+  var I = ["package:fastkes_app/widgets/confirm_bottom_sheet.dart"];
+  var address$ = dart.privateName(confirm_bottom_sheet, "ConfirmBottomSheet.address");
+  var lat$ = dart.privateName(confirm_bottom_sheet, "ConfirmBottomSheet.lat");
+  var long$ = dart.privateName(confirm_bottom_sheet, "ConfirmBottomSheet.long");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  confirm_bottom_sheet.ConfirmBottomSheet = class ConfirmBottomSheet extends framework.StatelessWidget {
+    get address() {
+      return this[address$];
+    }
+    set address(value) {
+      super.address = value;
+    }
+    get lat() {
+      return this[lat$];
+    }
+    set lat(value) {
+      super.lat = value;
+    }
+    get long() {
+      return this[long$];
+    }
+    set long(value) {
+      super.long = value;
+    }
+    build(context) {
+      let model = provider.Provider.of(order_vm.OrderViewModel, context);
+      return new container.Container.new({child: new basic.Padding.new({padding: C[0] || CT.C0, child: new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.center, mainAxisAlignment: flex.MainAxisAlignment.spaceBetween, children: T.JSArrayOfWidget().of([new basic.SizedBox.new({height: 0.0, $creationLocationd_0dea112b090073317d4: C[1] || CT.C1}), new text.Text.new(this.address, {textAlign: ui.TextAlign.center, style: new text_style.TextStyle.new({fontSize: 18.0}), $creationLocationd_0dea112b090073317d4: C[4] || CT.C4}), new elevated_button.ElevatedButton.new({onPressed: dart.fn(() => {
+                  model.updateCustomerAddress(this.address);
+                  model.updateCustomerLatLong(dart.str(this.lat) + "," + dart.str(this.long));
+                  navigator.Navigator.popAndPushNamed(T.ObjectN(), T.ObjectN(), context, "/choose_hospital_page");
+                }, T.VoidTovoid()), child: new basic.Padding.new({padding: C[9] || CT.C9, child: new text.Text.new("Confirm", {style: google_fonts.GoogleFonts.montserrat({color: colors.Colors.white, textStyle: new text_style.TextStyle.new({fontSize: 24.0})}), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10}), $creationLocationd_0dea112b090073317d4: C[14] || CT.C14}), style: elevated_button.ElevatedButton.styleFrom({primary: theme.Theme.of(context).primaryColor, minimumSize: new ui.Size.new(1 / 0, 30.0)}), $creationLocationd_0dea112b090073317d4: C[18] || CT.C18})]), $creationLocationd_0dea112b090073317d4: C[23] || CT.C23}), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28}), $creationLocationd_0dea112b090073317d4: C[32] || CT.C32});
+    }
+  };
+  (confirm_bottom_sheet.ConfirmBottomSheet.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let address = opts && 'address' in opts ? opts.address : null;
+    let lat = opts && 'lat' in opts ? opts.lat : null;
+    let long = opts && 'long' in opts ? opts.long : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[address$] = address;
+    this[lat$] = lat;
+    this[long$] = long;
+    confirm_bottom_sheet.ConfirmBottomSheet.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = confirm_bottom_sheet.ConfirmBottomSheet.prototype;
+  dart.addTypeTests(confirm_bottom_sheet.ConfirmBottomSheet);
+  dart.addTypeCaches(confirm_bottom_sheet.ConfirmBottomSheet);
+  dart.setMethodSignature(confirm_bottom_sheet.ConfirmBottomSheet, () => ({
+    __proto__: dart.getMethods(confirm_bottom_sheet.ConfirmBottomSheet.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(confirm_bottom_sheet.ConfirmBottomSheet, I[0]);
+  dart.setFieldSignature(confirm_bottom_sheet.ConfirmBottomSheet, () => ({
+    __proto__: dart.getFields(confirm_bottom_sheet.ConfirmBottomSheet.__proto__),
+    address: dart.finalFieldType(core.String),
+    lat: dart.finalFieldType(core.double),
+    long: dart.finalFieldType(core.double)
+  }));
+  dart.trackLibraries("packages/fastkes_app/widgets/confirm_bottom_sheet.dart", {
+    "package:fastkes_app/widgets/confirm_bottom_sheet.dart": confirm_bottom_sheet
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["confirm_bottom_sheet.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAae;;;;;;IACA;;;;;;IACA;;;;;;UAGa;AAClB,kBAAiB,8CAAmB,OAAO;AAEjD,YAAO,qCAEE,sDAEE,0CACkC,mDACF,+CAC3B,wBACR,gCAAiB,8DACjB,kBACI,0BACmB,4BACd,wCAAoB,iEAE7B,mDACa;AAE2B,kBAApC,AAAM,KAAD,uBAAuB;AACa,kBAAzC,AAAM,KAAD,uBAAmC,SAAV,YAAG,eAAE;AAGwB,kBAAjD,8DAAgB,OAAO,EAAE;2CAE9B,sDAEE,kBACL,mBACmB,4CACH,gCACH,wCACC,uIAKI,mDACL,AAAY,eAAT,OAAO,6BACZ,uBAAsB;IAOjD;;;QA1DO;QACS;QACA;QACA;;IAFA;IACA;IACA;AACX,2EAAW,GAAG;;EAAC","file":"../../../../../../../../../packages/fastkes_app/widgets/confirm_bottom_sheet.dart.lib.js"}');
+  // Exports:
+  return {
+    widgets__confirm_bottom_sheet: confirm_bottom_sheet
+  };
+}));
+
+//# sourceMappingURL=confirm_bottom_sheet.dart.lib.js.map
